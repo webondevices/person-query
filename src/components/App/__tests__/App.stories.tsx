@@ -1,14 +1,14 @@
-import configureStore from 'redux-mock-store';
-import * as React from 'react';
-import {RootState} from '../../../reducers';
-import App from '../App';
+// import configureStore from 'redux-mock-store';
+// import * as React from 'react';
+// import {RootState} from '../../../reducers';
+// import App from '../App';
 
-export default {title: 'App'};
+// export default {title: 'App'};
 
-const store = configureStore<Partial<RootState>>()({
-  todos: {
-    todoList: ['item'],
-  },
-});
+// const store = configureStore<Partial<RootState>>()({
+//   persons: {
+//     personList: ['item'],
+//   },
+// });
 
-export const component = () => <App store={store} />;
+// export const component = () => <App store={store} />;

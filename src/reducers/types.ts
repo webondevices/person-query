@@ -1,5 +1,12 @@
-export type Todo = string;
+export interface Person {
+  name: string;
+  gender: string;
+  birthYear: string;
+  height: number;
+  mass: number;
+  hairColor: string;
+}
 
-export interface TodoState {
-  todoList: Todo[];
+export interface PersonState {
+  personList: Person;
 }

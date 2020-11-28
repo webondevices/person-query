@@ -1,15 +1,14 @@
-import { Todo } from "../reducers/types";
+import {Person} from '../reducers/types';
 
-export const ADD_TODO = "ADD_TODO";
-export const DELETE_LAST_TODO = "DELETE_LAST_TODO";
+export const ADD_PERSONS = 'ADD_PERSONS';
+export const LOAD_PERSONS = 'LOAD_PERSONS';
 
-interface SendTodoAction {
-  type: typeof ADD_TODO;
-  payload: Todo;
+interface LoadPersonsAction {
+  type: typeof LOAD_PERSONS;
+}
+interface AddPersonsAction {
+  type: typeof ADD_PERSONS;
+  payload: Person[];
 }
 
-interface DeleteLastTodoAction {
-  type: typeof DELETE_LAST_TODO;
-}
-
-export type TodoActionTypes = SendTodoAction | DeleteLastTodoAction;
+export type PersonActionTypes = AddPersonsAction | LoadPersonsAction;

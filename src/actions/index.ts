@@ -1,2 +1,2 @@
-export * from "./todoActions";
-export * from "./types";
+export * from './personActions';
+export * from './types';
